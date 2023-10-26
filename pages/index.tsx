@@ -34,13 +34,21 @@ export default function Home() {
           </div>}
         <p className='font-bold text-center mb-2 mt-12'>Where to <span className="gradient ananda">explore</span> next?</p>
         <hr className='mx-10' />
-        <div className=' flex justify-evenly items-center mt-2'>
+        <div className='flex justify-evenly items-center my-2'>
           {["trains", "routes", "dates", "destinations"].map(name => {
             return <div className='flex flex-col gap-1' key={name}><Image src={name + "icon.svg"} alt={name} width={64} height={64} className='w-auto h-7' /><p className='text-xs'>{name.toUpperCase()}</p></div>;
           })}
         </div>
-        <div className='px-4'>
-          <h1 className='ananda'>popular packages</h1>
+        <div className='px-4 sm:px-2 my-6'>
+          <h1 className='ananda text-3xl my-4'>popular packages</h1>
+          <div className='flex justify-around max-w-full flex-wrap'>
+            {[{ text: "Rail Tour Packages", imgUrl: "/rtp.png" }, { text: "Maharajas Express", imgUrl: "/me.png" }, { text: "International Packages", imgUrl: "/ip.png" }, { text: "Domestic Air Packages", imgUrl: "/dap.png" }].map(obj => {
+              return <div key={obj.text}>
+                <Image src={obj.imgUrl} width={200} height={200} alt={obj.text} className='w-[30vw]' />
+
+              </div>;
+            })}
+          </div>
         </div>
         <footer className='bg-[#1F0C3AD6] p-6'>
           <p className='ananda text-white text-3xl'>contact us</p>
