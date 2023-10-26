@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "Ananda";
+  src: url("../fonts/ananda/Ananda\ Namaste.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Kollektif";
+  src: url("../fonts/kollektif/Kollektif.ttf");
+}
+
+body {
+  background-color: #fbfae5;
+  overflow-x: hidden;
+  font-family: "Kollektif", sans-serif;
+}
+.ananda {
+  font-family: "Ananda", sans-serif;
+}
+.gradient {
+  background: linear-gradient(
+    180deg,
+    #ffbc80 calc(01.19% * 2),
+    #f76e11 calc(18.54% * 2),
+    #b22222 calc(25.97% * 2),
+    #511845 calc(37% * 2)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.image .ananda {
+  opacity: 0.81;
+}
+.welcome {
+  color: #511845;
+}
+button.button {
+  color: rgba(97, 0, 69, 0.64);
+  text-align: center;
+  font-family: Kollektif, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27.5px; /* 91.667% */
+  border: 1px solid #620045;
+  box-shadow: 7px 5px 4px 0px #620045;
+}
+
+img {
+  max-width: none;
+}
+
+.destination-input::placeholder {
+  color: #9d2029a3;
+}
