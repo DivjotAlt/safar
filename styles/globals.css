@@ -78,3 +78,11 @@ img {
 textarea.border-\[3px\]::placeholder {
   color: #bf6e6d;
 }
+
+.safety-text-shadow {
+  text-shadow: 7px 7px 4px rgba(0, 0, 0, 0.25);
+}
+
+.safety-box-shadow {
+  box-shadow: 10px 7px 7px 0px rgba(0, 0, 0, 0.25);
+}

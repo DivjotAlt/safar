@@ -7,7 +7,15 @@ export default function Home() {
   const loggedIn = false;
   return (
     <>
-      <Logo absolute />
+      <nav className='fixed top-0 w-screen px-2 py-6 z-50 flex justify-between items-center'>
+        <Link href={"/"} className="gradient ananda text-6xl px-8">safar</Link>
+        <div>
+          <Link href={"/profile"}>Profile</Link>
+          <Link href={"/recruit"}>Recruitments</Link>
+          <Link href={"/safety"}>Safety</Link>
+          <Link href={"/tickets"}>Tickets</Link>
+        </div>
+      </nav>
       <Head>
         <title>Safar</title>
       </Head>
