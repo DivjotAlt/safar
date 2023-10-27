@@ -32,6 +32,12 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.gradient2 {
+  background: linear-gradient(180deg, #b22222 8.64%, #511845 98.78%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .image .ananda {
   opacity: 0.81;
 }
@@ -55,4 +61,20 @@ img {
 
 .destination-input::placeholder {
   color: #9d2029a3;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.heading {
+  width: calc(100vw - 40vh);
+}
+
+.logininput::placeholder {
+  color: #ffbc80;
+}
+
+textarea.border-\[3px\]::placeholder {
+  color: #bf6e6d;
 }
