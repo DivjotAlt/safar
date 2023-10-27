@@ -9,7 +9,7 @@ export default function SignUp() {
     <div className="heading mr-auto mt-12">
       <h1 className="gradient2 ananda text-center h-28 text-8xl w-screen my-12">profile</h1>
       <div className="px-32">
-        <div className="flex justify-between items-center h-64 mb-16">
+        <div className="flex justify-start gap-16 items-center h-64 mb-16">
           <div><Image src={"/maheshji.png"} alt="profile picture" width={256} height={256} className="h-64" /></div>
           <div className="h-64 text-2xl flex flex-col justify-center items-center">
             <div>
