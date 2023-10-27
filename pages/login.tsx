@@ -19,6 +19,7 @@ export default function Login() {
           })}
           <p className="text-center">Don&apos;t have an account? <Link href={"/signup"} className="text-[#C0706F] underline text-lg">Sign Up</Link></p>
         </div>
+        <button className="m-auto mt-10 w-60 border border-[#620045] text-[#610045A3] px-10 py-2 block text-xl">log in</button>
       </div>
     </div>
   </>
