@@ -67,10 +67,6 @@ img {
   text-wrap: balance;
 }
 
-.heading {
-  width: calc(100vw - 40vh);
-}
-
 .logininput::placeholder {
   color: #ffbc80;
 }
@@ -85,4 +81,13 @@ textarea.border-\[3px\]::placeholder {
 
 .safety-box-shadow {
   box-shadow: 10px 7px 7px 0px rgba(0, 0, 0, 0.25);
+}
+
+.heading {
+  width: 100%;
+}
+@media (min-width: 990px) {
+  .heading {
+    width: calc(100vw - 40vh);
+  }
 }

@@ -1,13 +1,12 @@
 import Image from 'next/image';
 import Head from 'next/head';
 import Link from 'next/link';
-import Logo from '@/components/logoLink';
 
 export default function Home() {
   const loggedIn = false;
   return (
     <>
-      <nav className='fixed top-0 w-screen px-2 py-6 z-50 flex justify-between items-center'>
+      <nav className='fixed top-0 w-[calc(100vw-1rem)] px-2 py-6 z-50 flex justify-between items-center'>
         <Link href={"/"} className="gradient ananda text-6xl px-8">safar</Link>
         <div>
           <Link href={"/profile"}>Profile</Link>
